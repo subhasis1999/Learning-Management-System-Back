@@ -11,7 +11,7 @@ app.use('/subjects', express.static(path.join(__dirname, 'subjects')));
 app.use('/chapters/thumbnails', express.static(path.join(__dirname,'chapters/thumbnails')));
 app.use('/chapters/videos', express.static(path.join(__dirname,'chapters/videos')));
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://learning-management-system-front-sable.vercel.app',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
 }))
 mongoose.connect('mongodb+srv://soumyaranjan65432:kathakhunta90@cluster0.grybuzc.mongodb.net/lms')
